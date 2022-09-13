@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #090a0e;
+  color: white;
+}
+
+.max-center {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.container {
+  background-color: #0f1014;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-card {
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.movie-cover {
+  width: 100%;
+  display: block;
+  min-height: 359.25px;
+}
+
+/* No image founder */
+.movie-placeholder {
+  min-height: 359px;
+  background-color: white;
+  color: #0f1014;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero part */
+.hero {
+  margin: 15px auto;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 70%;
+  padding-bottom: 36px;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero-overview {
+  height: 72px;
+}
+
+.hero-button {
+  background-color: #0f1014;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-close {
+  position: absolute;
+  z-index: 10;
+  bottom: 40px;
+  left: 0;
+}
+
+/* Youtube Container */
+.youtube-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* Link to home */
+.link-to-home {
+  text-decoration: none;
+  color: white;
+}
